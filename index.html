@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Leela Shop - Product Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header-inner">
+      <h1 class="brand">Leela Shop</h1>
+      <div class="cart">Cart: <span id="cartCount">0</span></div>
+    </div>
+  </header>
+
+  <main class="container product-area">
+
+    <div class="product-images">
+
+      <img id="mainImage" 
+        src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=800&q=80" 
+        alt="Stylish Dress"
+        class="main-photo">
+
+      <div class="thumb-row">
+        <img 
+          src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=200&q=80" 
+          class="thumb" 
+          data-img="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=800&q=80"
+        >
+
+        <img 
+          src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=200&q=80" 
+          class="thumb" 
+          data-img="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=800&q=80"
+        >
+      </div>
+
+    </div>
+
+    <div class="product-details">
+      <h2>Stylish Purple Dress</h2>
+      <p class="price">₹1,999 <span class="old-price">₹2,499</span></p>
+
+      <div class="qty-box">
+        <button id="minus">-</button>
+        <input id="qty" type="number" value="1" min="1">
+        <button id="plus">+</button>
+      </div>
+
+      <button id="addToCart" class="btn">Add to Cart</button>
+
+      <p class="desc">
+        A premium stylish dress made with soft breathable fabric. Perfect for casual and party wear.
+      </p>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Leela Shop</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

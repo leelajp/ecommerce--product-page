@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Auth | Leela</title>
+  <!-- IMPORTANT: file name must be exactly style.css in same folder -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="page">
+    <section class="card">
+      <h1 class="brand">Leela</h1>
+      <p class="role">Frontend · UI/UX</p>
+
+      <form id="authForm" class="auth-form" autocomplete="off">
+        <label>
+          Email
+          <input id="email" name="email" type="email" placeholder="you@example.com" required />
+        </label>
+
+        <label>
+          Password
+          <div class="pw-row">
+            <input id="password" name="password" type="password" placeholder="Enter password" required />
+            <button type="button" id="togglePw" class="small">Show</button>
+          </div>
+        </label>
+
+        <div class="actions">
+          <button id="signin" type="submit" class="primary">Sign in</button>
+          <button id="signup" type="button" class="outline">Sign up</button>
+        </div>
+
+        <p class="note">This is a demo — no data is stored.</p>
+      </form>
+    </section>
+  </main>
+
+  <!-- IMPORTANT: file name must be exactly script.js in same folder -->
+  <script src="script.js"></script>
+</body>
+</html>

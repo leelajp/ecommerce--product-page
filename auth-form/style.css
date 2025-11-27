@@ -1,0 +1,25 @@
+/* simple centered layout */
+:root{ --bg:#f5f7fb; --card:#ffffff; --accent:#2874f0; --muted:#6b7280; --radius:12px; }
+*{box-sizing:border-box}
+html,body{height:100%}
+body{font-family:Inter, system-ui, Arial; margin:0; background:var(--bg); display:flex; align-items:center; justify-content:center}
+.page{width:100%; max-width:900px; padding:32px}
+.card{background:var(--card); border-radius:var(--radius); box-shadow:0 10px 30px rgba(20,20,40,0.08); padding:32px; display:flex; flex-direction:column; gap:12px}
+.brand{margin:0; color:var(--accent); font-size:28px}
+.role{margin:0; color:var(--muted); font-size:13px}
+
+.auth-form{margin-top:8px; display:flex; flex-direction:column; gap:12px}
+.auth-form label{display:flex; flex-direction:column; gap:6px; font-size:13px; color:#222}
+.auth-form input{padding:12px 10px; border:1px solid #e6e9ef; border-radius:8px; font-size:14px}
+.pw-row{display:flex; gap:8px; align-items:center}
+.small{padding:8px 10px; border-radius:8px; border:1px solid #ddd; background:#fff; cursor:pointer}
+.small:active{transform:translateY(1px)}
+.actions{display:flex; gap:10px; margin-top:8px}
+.primary{background:var(--accent); color:#fff; border:none; padding:12px 16px; border-radius:8px; cursor:pointer}
+.outline{background:transparent; color:var(--accent); border:1px solid var(--accent); padding:10px 14px; border-radius:8px; cursor:pointer}
+.note{font-size:12px; color:var(--muted); margin:8px 0 0}
+@media (min-width:900px){
+  .page{display:flex; justify-content:center}
+  .card{flex-direction:row; gap:24px; align-items:center; padding:28px 36px}
+  .auth-form{width:420px}
+}
